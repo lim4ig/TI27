@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+        <div class="container">
+        <h2>Formulario educacional</h2>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" maxlength="40" placeholder="Digite seu nome" required/>
+
+            <label for="dataNascimento">Data de Nascimento:</label>
+            <input type="date" id="dataNascimento" name="dataNascimento" required/>
+
+            <label for="nomeMae">Nome da Mãe:</label>
+            <input type="text" id="nomeMae" name="nomeMae" maxlength="40" placeholder="Nome da Mãe" required/>
+
+            <label for="nomePai">Nome do Pai:</label>
+            <input type="text" id="nomePai" name="nomePai" maxlength="40" placeholder="Nome do Pai" required/>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" maxlength="8" placeholder="Digite seu telefone" required/>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required/>
+
+            <label for="serie">Série:</label>
+            <select name="serie" id="serie" required>
+                <option value="">Selecione</option>
+                <option value="1">1ª Série</option>
+                <option value="2">2ª Série</option>
+                <option value="3">3ª Série</option>
+            </select>
+
+            <label for="genero">Gênero:</label>
+            <select id="genero" name="genero" required>
+                <option value="">Selecione</option>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+                <option value="outro">Outro</option>
+            </select>
+    
+        <div class="turno">
+            <label for="turno">Turno:</label>
+            <input type="radio" id="manha" name="turno" value="manha" required>
+            <label for="manha" style="display:inline;">Manhã</label>
+            <input type="radio" id="tarde" name="turno" value="tarde" required>
+            <label for="tarde" style="display:inline;">Tarde</label>
+            <input type="radio" id="noite" name="turno" value="noite" required>
+            <label for="noite" style="display:inline;">Noite</label>
+        </div>
+
+        <div class="atividade">
+            <label for="atividade">Atividade extra-curriculares:</label>
+            <input type="checkbox" id="futebol" name="atividade" value="futebol">
+            <label for="futebol" style="display:inline;">Futebol</label>
+            <input type="checkbox" id="musica" name="atividade" value="musica">
+            <label for="musica" style="display:inline;">Música</label>
+            <input type="checkbox" id="pintura" name="atividade" value="pintura">
+            <label for="pintura" style="display:inline;">Pintura</label>
+            <input type="checkbox" id="ballet" name="atividade" value="ballet">
+            <label for="ballet" style="display:inline;">Ballet</label>
+            <input type="checkbox" id="judo" name="atividade" value="judo">
+            <label for="judo" style="display:inline;">Judô</label>
+        </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 10px;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        input, select, button {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #2894a7;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover, button:focus, button:active {
+            background-color: #00d9ff;
+        }
+        input:hover, input:focus, input:active,
+        select:hover, select:focus, select:active {
+            border-color: #2894a7;
+            outline: none;
+        }
+        .turno {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+        }
+        .atividade {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            font-size: 14px;
+            padding: 10px;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            input, select, button {
+                font-size: 14px;
+            }
+        }
+
+    </style>
+</body>
+</html>

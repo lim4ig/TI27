@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text"  id="nome" name="nome">
+        <br><br>
+        <label for="sobrenome">Sobrenome:</label>
+        <input type="text" id="sobrenome" name="sobrenome">
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <br><br>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha">
+        <br><br>
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" min="0" max="150">
+        <br><br>    
+        <label for="newsletter"><input type="checkbox" name="newsletter" id="newsletter"> Receber Novidades</label>
+        <br><br>
+
+        <hr>
+
+        <label>Genero:</label>
+       
+        <input type="radio" id="masculino" name="genero" value="masculino"> 
+        <label for="masc">Masculino</label>
+
+        <input type="radio" id="feminino" name="genero" value="feminino"> 
+        <label for="fem">Feminino</label>
+
+        <input type="radio" id="outro" name="genero" value="outro"> 
+        <label for="outro">Outro</label>
+
+        <hr>
+
+        <label for="estado">Estado:</label>
+        <select name="estado" id="estado">
+            <option value="1">São Paulo</option>
+            <option value="2">Rio de Janeiro</option>
+            <option value="3">Minas Gerais</option>
+            <option value="4">Espirito Santo</option>
+            <option value="5">Bahia</option>
+        </select>
+
+        <hr>
+
+        <label for="cidade">Cidade:</label>
+        <select name="cidade" id="cidade">
+            <option value="1">Americana</option>
+            <option value="2">Campinas</option>
+            <option value="3">Santa Barbara d'Oeste</option>
+            <option value="4">Limeira</option>
+            <option value="5">Piracicaba</option>
+        </select>
+
+        <hr>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="10" cols="5"></textarea>
+    </form>
+</body>
+</html>

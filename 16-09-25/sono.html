@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sono</title>
+</head>
+<style>
+    .menu {
+        margin: 20px;
+        background-color: rgb(0, 225, 255);
+        padding: 10px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+        color: white;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+    ul.navegacao {
+        list-style-type: none;
+        margin: 20px;
+        padding: 10px;
+        overflow: hidden;
+        background-color: #333333;
+        border-radius: 10px;
+    }
+    ul.navegacao li {
+        float: right;
+        margin-right: 30px;
+    }
+    ul.navegacao li a {
+        display: flex;
+        justify-content: flex-end;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    ul.navegacao li a:hover {
+        background-color: rgb(0, 225, 255);
+    }
+    footer {
+        background-color: #33333300;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        border-radius: 10px;
+    }
+    section {
+        margin: 20px;
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: #f2f2f2;
+    }
+    img {
+        width: 300px;
+        height: auto;
+        display: block;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        margin-left: 20px;
+        border: 2px solid black;
+    }
+    .submit {
+    padding:8px 12px; 
+    font-size:16px; 
+    border-radius:5px; 
+    background-color:rgb(0,225,255); 
+    color:white; 
+    border:none; 
+    cursor:pointer;
+    }   
+    .text {
+    padding:8px; 
+    font-size:16px; 
+    border-radius:5px; 
+    border:1px solid #333;
+    }
+
+
+</style>
+<body>
+    <nav class="menu">
+        <h1>Sempre Alerta</h1>
+        <form style="margin-top:10px;">
+            <input class="text" type="text" placeholder="Pesquisar...">
+            <button class="submit" type="submit">Buscar</button>
+        </form>
+    </nav>
+    <ul class="navegacao">
+        <li><a href="Inicio">Início</a></li>
+        <li><a href="Sobre">Sobre</a></li>
+        <li><a href="Contato">Contato</a></li>
+        <li><a href="Curiosidades">Curiosidades</a></li>
+    </ul>
+    <footer>
+        <p>Todos os direitos reservados &copy; 2025</p>
+    </footer>
+    <section>
+        <h2>Curiosidades sobre o sono</h2>
+        <ul>
+            <img src="https://imgs.search.brave.com/xwpF7fMCAXlZazm5HJvbCDqhP6SOd4pJGA2o17at4Js/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cHJlZmVpdHVyYS5z/cC5nb3YuYnIvY2lk/YWRlL3NlY3JldGFy/aWFzL3VwbG9hZC9z/YXVkZS9ob3NwaXRh/bF9kb19zZXJ2aWRv/cl9wdWJsaWNvX211/bmljaXBhbC9pbWFn/ZW5zLzIwMjIvTm90/JUMzJUFEY2lhcy9T/b25vXzEuanBn" alt="Insonia">
+            <li>O sono é essencial para a saúde física e mental.</li>
+            <li>A privação de sono pode afetar o humor e a cognição.</li>
+            <li>Os sonhos ocorrem principalmente durante a fase REM do sono.</li>
+            <li>Adultos geralmente precisam de 7-9 horas de sono por noite.</li>
+            <li>O sono ajuda na consolidação da memória e no aprendizado.</li>
+            <li>Distúrbios do sono, como apneia, podem impactar a qualidade do sono.</li>
+            <li>O sono inadequado está associado a um maior risco de doenças crônicas.</li>
+            <li>Estabelecer uma rotina de sono regular pode melhorar a qualidade do sono.</li>
+        </ul>
+    </section>
+</body>
+</html>

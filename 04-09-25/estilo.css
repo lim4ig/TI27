@@ -1,0 +1,12 @@
+body {
+    background-image: url('Quem-e-Ramon-Dino-maior-nome-do-Brasil-no-Mr.-Olympia-2024-9.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#Caixa{
+    background-color: tomato;
+    height: 150px;
+    width: 150px;
+    border: 1px solid rgb(255, 0, 0);
+    border-radius: 15px;
+}
